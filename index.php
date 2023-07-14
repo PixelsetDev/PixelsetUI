@@ -15,5 +15,7 @@
                 &lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/pixelsetdev/pixelsetui@master/bundle.min.css"&gt;
             </code>
         </main>
+
+        <?php require __DIR__ . '/../common/footer.php'; ?>
     </body>
 </html>
