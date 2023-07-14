@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GLOBAL */
+* { @apply text-lg; }
+
 /*
  * HEADINGS
  */
@@ -39,3 +42,9 @@
 .btn-outline-pink { @apply border border-pink-500 hover:bg-pink-500 hover:text-white; }
 .btn-outline-dark { @apply border border-neutral-900 hover:bg-neutral-900 hover:text-white; }
 .btn-outline-light { @apply border border-neutral-200 hover:bg-neutral-200; }
+
+/*
+ * CODE
+ */
+.code-inline { @apply px-1 bg-neutral-100 border border-neutral-500 rounded font-mono; }
+.code-block { @apply block code-inline; }
