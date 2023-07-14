@@ -4,6 +4,7 @@
 
 /* GLOBAL */
 * { @apply text-lg; }
+ul { @apply list-disc list-inside; }
 
 /*
  * HEADINGS
@@ -44,7 +45,39 @@
 .btn-outline-light { @apply border border-neutral-200 hover:bg-neutral-200; }
 
 /*
+ * LINKS
+ */
+.link { @apply underline }
+.link-red { @apply link text-red-500 hover:text-red-400; }
+.link-orange { @apply link text-orange-500 hover:text-orange-400; }
+.link-yellow { @apply link text-yellow-500 hover:text-yellow-400; }
+.link-green { @apply link text-green-500 hover:text-green-400; }
+.link-blue { @apply link text-blue-500 hover:text-blue-400; }
+.link-purple { @apply link text-purple-500 hover:text-purple-400; }
+.link-pink { @apply link text-pink-500 hover:text-pink-400; }
+.link-dark { @apply link text-black hover:text-neutral-800; }
+.link-light { @apply link text-white hover:text-neutral-200; }
+
+/*
  * CODE
  */
 .code-inline { @apply px-1 bg-neutral-100 border border-neutral-500 rounded font-mono; }
 .code-block { @apply block code-inline; }
+
+/*
+ * ALERTS
+ */
+.alert { @apply px-2 py-1 border-l-2 block; }
+.alert-red { @apply alert bg-red-300 border-red-700; }
+.alert-orange { @apply alert bg-orange-300 border-orange-700; }
+.alert-yellow { @apply alert bg-yellow-300 border-yellow-700; }
+.alert-green { @apply alert bg-green-300 border-green-700; }
+.alert-blue { @apply alert bg-blue-300 border-blue-700; }
+.alert-purple { @apply alert bg-purple-300 border-purple-700; }
+.alert-pink { @apply alert bg-pink-300 border-pink-700; }
+.alert-dark { @apply alert bg-neutral-600 border-black text-white; }
+.alert-light { @apply alert bg-neutral-300 border-neutral-700; }
+
+/*
+ * ACCORDION
+ */
