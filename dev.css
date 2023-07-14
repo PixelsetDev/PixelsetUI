@@ -117,3 +117,20 @@ ul { @apply list-disc list-inside; }
 .link-pink { @apply link text-pink-500 hover:text-pink-400; }
 .link-dark { @apply link text-black hover:text-neutral-800; }
 .link-light { @apply link text-white hover:text-neutral-200; }
+
+/*
+ * PROGRESS
+ */
+.progress { @apply w-full h-3 bg-neutral-100; }
+.progress-rounded { @apply rounded-full overflow-hidden progress; }
+.progress-bar { @apply block h-3; }
+
+.progress-red { @apply progress-bar bg-red-500; }
+.progress-orange { @apply progress-bar bg-orange-500; }
+.progress-yellow { @apply progress-bar bg-yellow-300; }
+.progress-green { @apply progress-bar bg-green-500; }
+.progress-blue { @apply progress-bar bg-blue-500; }
+.progress-purple { @apply progress-bar bg-purple-500; }
+.progress-pink { @apply progress-bar bg-pink-500; }
+.progress-dark { @apply progress-bar bg-neutral-900; }
+.progress-light { @apply progress-bar bg-neutral-200; }
