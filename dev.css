@@ -3,22 +3,49 @@
 @tailwind utilities;
 
 /* GLOBAL */
-* { @apply text-lg; }
 ul { @apply list-disc list-inside; }
 
 /*
- * HEADINGS
+ * ALERT
  */
-.h1 { @apply lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold; }
-.h2 { @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold; }
-.h3 { @apply lg:text-3xl md:text-2xl sm:text-xl text-lg font-medium; }
-
-.h1-p { @apply pt-8 pb-4; }
-.h2-p { @apply pt-6 pb-3; }
-.h3-p { @apply pt-4 pb-2; }
+.alert { @apply px-2 py-1 border-l-2 block w-full; }
+.alert-red { @apply alert bg-red-300 border-red-700; }
+.alert-orange { @apply alert bg-orange-300 border-orange-700; }
+.alert-yellow { @apply alert bg-yellow-300 border-yellow-700; }
+.alert-green { @apply alert bg-green-300 border-green-700; }
+.alert-blue { @apply alert bg-blue-300 border-blue-700; }
+.alert-purple { @apply alert bg-purple-300 border-purple-700; }
+.alert-pink { @apply alert bg-pink-300 border-pink-700; }
+.alert-dark { @apply alert bg-neutral-600 border-black text-white; }
+.alert-light { @apply alert bg-neutral-300 border-neutral-700; }
 
 /*
- * BUTTONS
+ * BADGE
+ */
+.badge { @apply px-2 py-1 rounded-lg; }
+.badge-red { @apply badge bg-red-500 text-white; }
+.badge-orange { @apply badge bg-orange-500 text-white; }
+.badge-yellow { @apply badge bg-yellow-300; }
+.badge-green { @apply badge bg-green-500 text-white; }
+.badge-blue { @apply badge bg-blue-500 text-white; }
+.badge-purple { @apply badge bg-purple-500 text-white; }
+.badge-pink { @apply badge bg-pink-500 text-white; }
+.badge-dark { @apply badge bg-neutral-900 text-white; }
+.badge-light { @apply badge bg-neutral-200; }
+
+.badge-pill { @apply px-2 py-1 rounded-full; }
+.badge-pill-red { @apply badge-pill bg-red-500 text-white; }
+.badge-pill-orange { @apply badge-pill bg-orange-500 text-white; }
+.badge-pill-yellow { @apply badge-pill bg-yellow-300; }
+.badge-pill-green { @apply badge-pill bg-green-500 text-white; }
+.badge-pill-blue { @apply badge-pill bg-blue-500 text-white; }
+.badge-pill-purple { @apply badge-pill bg-purple-500 text-white; }
+.badge-pill-pink { @apply badge-pill bg-pink-500 text-white; }
+.badge-pill-dark { @apply badge-pill bg-neutral-900 text-white; }
+.badge-pill-light { @apply badge-pill bg-neutral-200; }
+
+/*
+ * BUTTON
  */
 .btn { @apply px-4 py-2 rounded-lg transition duration-200; }
 .btn-sm { @apply px-2 py-1 rounded-lg transition duration-200; }
@@ -45,7 +72,24 @@ ul { @apply list-disc list-inside; }
 .btn-outline-light { @apply border border-neutral-200 hover:bg-neutral-200; }
 
 /*
- * LINKS
+ * CODE
+ */
+.code-inline { @apply px-1 bg-neutral-100 border border-neutral-500 rounded font-mono; }
+.code-block { @apply block code-inline; }
+
+/*
+ * HEADING
+ */
+.h1 { @apply lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold; }
+.h2 { @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold; }
+.h3 { @apply lg:text-3xl md:text-2xl sm:text-xl text-lg font-medium; }
+
+.h1-p { @apply pt-8 pb-4; }
+.h2-p { @apply pt-6 pb-3; }
+.h3-p { @apply pt-4 pb-2; }
+
+/*
+ * LINK
  */
 .link { @apply underline }
 .link-red { @apply link text-red-500 hover:text-red-400; }
@@ -57,27 +101,3 @@ ul { @apply list-disc list-inside; }
 .link-pink { @apply link text-pink-500 hover:text-pink-400; }
 .link-dark { @apply link text-black hover:text-neutral-800; }
 .link-light { @apply link text-white hover:text-neutral-200; }
-
-/*
- * CODE
- */
-.code-inline { @apply px-1 bg-neutral-100 border border-neutral-500 rounded font-mono; }
-.code-block { @apply block code-inline; }
-
-/*
- * ALERTS
- */
-.alert { @apply px-2 py-1 border-l-2 block; }
-.alert-red { @apply alert bg-red-300 border-red-700; }
-.alert-orange { @apply alert bg-orange-300 border-orange-700; }
-.alert-yellow { @apply alert bg-yellow-300 border-yellow-700; }
-.alert-green { @apply alert bg-green-300 border-green-700; }
-.alert-blue { @apply alert bg-blue-300 border-blue-700; }
-.alert-purple { @apply alert bg-purple-300 border-purple-700; }
-.alert-pink { @apply alert bg-pink-300 border-pink-700; }
-.alert-dark { @apply alert bg-neutral-600 border-black text-white; }
-.alert-light { @apply alert bg-neutral-300 border-neutral-700; }
-
-/*
- * ACCORDION
- */
