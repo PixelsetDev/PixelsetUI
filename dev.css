@@ -72,6 +72,17 @@ ul { @apply list-disc list-inside; }
 .btn-outline-light { @apply border border-neutral-200 hover:bg-neutral-200; }
 
 /*
+ * CARD
+ */
+.card { @apply block max-w-sm border rounded-lg shadow; }
+.card-light { @apply card bg-white border-neutral-200; }
+.card-light-link { @apply card-light hover:shadow-lg transition duration-200 hover:bg-neutral-100; }
+.card-dark { @apply card bg-neutral-800 border-black text-white; }
+.card-dark-link { @apply card-dark hover:shadow-lg transition duration-200 hover:bg-neutral-700; }
+.card-content { @apply px-2 py-1; }
+.card-image { @apply w-full h-32 object-cover rounded-t-lg; }
+
+/*
  * CODE
  */
 .code-inline { @apply px-1 bg-neutral-100 border border-neutral-500 rounded font-mono; }
@@ -87,6 +98,11 @@ ul { @apply list-disc list-inside; }
 .h1-p { @apply pt-8 pb-4; }
 .h2-p { @apply pt-6 pb-3; }
 .h3-p { @apply pt-4 pb-2; }
+
+/*
+ * LAYOUT
+ */
+.layout-grid { @apply grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 place-items-center; }
 
 /*
  * LINK
