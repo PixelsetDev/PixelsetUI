@@ -1,2 +1,2 @@
 # PixelsetUI
-A user interface framework by Pixelset.
+The website for ui.pixelset.dev
